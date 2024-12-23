@@ -1,14 +1,11 @@
 import React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 
-const Header = () => (
-  <AppBar position="static">
-    <Toolbar>
-      <Typography variant="h6">To-Do List</Typography>
-    </Toolbar>
-  </AppBar>
-);
+const Header = () => {
+  return (
+    <header>
+      <h1>My Vite React App</h1>
+    </header>
+  );
+};
 
 export default Header;
