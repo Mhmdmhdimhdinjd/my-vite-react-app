@@ -1,16 +1,21 @@
 import React from 'react';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
+import { Container, CssBaseline, Box } from '@mui/material';
 
 const App = () => {
   return (
-    <div>
+    <React.Fragment>
+      <CssBaseline />
       <Header />
-      <main>
-        <p>Welcome to my Vite React App!</p>
-      </main>
-      <Footer />
-    </div>
+      <Container maxWidth="md">
+        <Box sx={{ mt: 4 }}>
+          <TodoForm />
+          <TodoList />
+        </Box>
+      </Container>
+    </React.Fragment>
   );
 };
 
